@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --secondary: #a29bfe;
+      --bg: #f5f6fa;
+      --dark: #2d3436;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--dark);
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: var(--primary);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #a29bfe, #6c5ce7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background: white;
+      color: var(--primary);
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--dark);
+      color: white;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .features, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer .socials a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Landing Page</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Experience the Premium Web Landing</h2>
+    <p>High-quality, responsive, and animated web pages for your modern business.</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <section id="features">
+    <h2 class="section-title">Our Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Fast Performance</h3>
+        <p>Optimized loading speed and seamless transitions across devices.</p>
+      </div>
+      <div class="card">
+        <h3>Modern Design</h3>
+        <p>Attractive visuals and user-focused layout built with UX in mind.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Layout</h3>
+        <p>Works perfectly on desktop, tablet, and mobile devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>We are passionate developers creating beautiful and functional websites. With cutting-edge tools and modern practices, we help businesses get online fast with style.</p>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonials">
+      <div class="card">
+        <h3>⭐ Velluri Gouse.</h3>
+        <p>"Amazing design and smooth interactions! Exactly what I needed for my business."</p>
+      </div>
+      <div class="card">
+        <h3>⭐ Hanisha Inapudi.</h3>
+        <p>"The responsive layout looks great on all my devices. Highly recommend!"</p>
+      </div>
+      <div class="card">
+        <h3>⭐ Velluri Sazida.</h3>
+        <p>"Professional look and easy to customize. Great support too!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact">
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Responsive Landing Page BY "GOUSE VELLURI". All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><i>🌐</i></a>
+      <a href="#"><i>📘</i></a>
+      <a href="#"><i>🐦</i></a>
+    </div>
+  </footer>
+
+  <script>
+    function sendMessage(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    }
+  </script>
+</body>
+</html>
